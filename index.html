@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Генератор на Иви</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-r9U9w83xxCFwd4yQ8QpOF+4jsPL2w8e4/Jr1F6F/p7SA1R9VI8H6wU6iUZI5hMK6" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1><i class="fas fa-crown"></i> Генератора на Иви <i class="fas fa-crown"></i></h1>
+      </header>
+
+<form>
+  <label for="startDate"><i class="fas fa-calendar-alt"></i> Дата на започване на ученето:</label>
+  <input type="date" id="startDate" name="startDate">
+
+  <label for="endDate"><i class="fas fa-calendar-alt"></i> Дата на приключване на ученето:</label>
+  <input type="date" id="endDate" name="endDate">
+
+  <button id="generateButton"><i class="fas fa-magic"></i> Генерирай произведение</button>
+</form>
+
+<div id="resultContainer">
+  <h2>Генерирани произведения:</h2>
+  <ul id="resultList"></ul>
+</div>
+<script>
+    // Функция за задаване на фоново изображение
+    function setBackgroundImage(src) {
+      document.body.style.backgroundImage = `url('${src}')`;
+    }
+  
+    // Пример: Задайте начална снимка
+    setBackgroundImage('wallpaperbetter.com_1920x1080.jpg');
+  </script>
+
+<script src="script.js"></script>
+</body>
+</html>
